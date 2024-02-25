@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+
+	<script type="text/javascript">
+		var arr=[],b1,b2,b3,b4,b5,b6,b7,b8,b9;
+		function getdata() {
+			
+			for(var i=0;i<9;i++)
+			{
+				var val=(Math.floor(Math.random()*9)+1);
+				// console.log(val);
+				if(!arr.includes(val)){
+					arr.push(val);
+				}
+				else
+				{
+					i--;
+				}
+			}
+			for (var i = 0; i < arr.length; i++) {
+				if(arr[i]==9){
+					arr[i]='';
+				}
+			}
+			for (var i = 0; i < arr.length; i++) {
+			document.getElementById('a'+i).value=arr[i];
+			}
+		}
+		
+
+		window.onload = function () {
+			getdata();
+		}
+
+			
+
+		
+	   		function myfunc1(){
+				b2 = document.getElementById("a1");
+	   			b1 = document.getElementById("a0");
+				b4 = document.getElementById("a3");
+
+	   			if(b2.value=='')
+	   			{
+	   				b2.value=b1.value;
+	   				b1.value='';
+	   			}else if(b4.value==''){
+	   				b4.value=b1.value;
+	   				b1.value='';
+	   			}
+	   			resultt();
+	   		}
+	   		function myfunc2() {
+	   			b1 = document.getElementById("a0");
+				b2 = document.getElementById("a1");
+				b3 = document.getElementById("a2");
+				b5 = document.getElementById("a4");
+				if (b1.value == '') {
+                b1.value = b2.value;
+                b2.value = '';
+	            }
+	            else if (b3.value == '') {
+	                b3.value = b2.value;
+	                b2.value = '';
+	            }
+	            else if (b5.value == '') {
+	                b5.value = b2.value;
+	                b2.value = '';
+	            }
+	            resultt();
+	   		}
+	   		function myfunc3() {
+	   			b2 = document.getElementById("a1");
+				b3 = document.getElementById("a2");
+				b5 = document.getElementById("a4");
+				 if (b2.value == '') {
+                b2.value = b3.value;
+                b3.value = '';
+	            }
+	            else if (b6.value == '') {
+	                b6.value = b3.value;
+	                b3.value = '';
+	            }
+	            resultt();
+
+	   		}
+
+	   		function myfunc4(){
+	   			b1 = document.getElementById("a0");
+	   			b4 = document.getElementById("a3");
+				b5 = document.getElementById("a4");
+				b7 = document.getElementById("a6");
+
+	   			if(b1.value=='')
+	   			{
+	   				b1.value=b4.value;
+	   				b4.value='';
+	   			}else if(b5.value==''){
+	   				b5.value=b4.value;
+	   				b4.value='';
+	   			}else if(b7.value==''){
+	   				b7.value=b4.value;
+	   				b4.value='';
+	   			}
+	   			resultt();
+	   		}
+	   		function myfunc5(){
+	   			b4 = document.getElementById("a3");
+				b5 = document.getElementById("a4");
+				b6 = document.getElementById("a5");
+				b2 = document.getElementById("a1");
+				b8 = document.getElementById("a7");
+	 			if (b2.value == '') {
+	                b2.value = b5.value;
+	                b5.value = '';
+	            }
+	            else if (b4.value == '') {
+	                b4.value = b5.value;
+	                b5.value = '';
+	            }
+	            else if (b6.value == '') {
+	                b6.value = b5.value;
+	                b5.value = '';
+	            }
+	            else if (b8.value == '') {
+	                b8.value = b5.value;
+	                b5.value = '';
+	            }
+	            resultt();
+	   		}
+	   		function myfunc6(){
+	   			b5 = document.getElementById("a4");
+				b6 = document.getElementById("a5");
+				b3 = document.getElementById("a2");
+				b9 = document.getElementById("a8");
+	 			if (b3.value == '') {
+	                b3.value = b6.value;
+	                b6.value = '';
+	            }
+	            else if (b5.value == '') {
+	                b5.value = b6.value;
+	                b6.value = '';
+	            }
+	            else if (b9.value == '') {
+	                b9.value = b6.value;
+	                b6.value = '';
+	            }
+	            resultt();
+
+	   		}
+	   		function myfunc7() {
+	   			b7 = document.getElementById("a6");
+				b8 = document.getElementById("a7");
+				b4 = document.getElementById("a3");
+				 if (b4.value == '') {
+	                b4.value = b7.value;
+	                b7.value = '';
+	            }
+	            else if (b8.value == '') {
+	                b8.value = b7.value;
+	                b7.value = '';
+	            }
+	            resultt();
+
+	   		}
+	   		function myfunc8() {
+	   			b7 = document.getElementById("a6");
+				b8 = document.getElementById("a7");
+				b9 = document.getElementById("a8");
+				b5 = document.getElementById("a4");
+				if (b7.value == '') {
+                b7.value = b8.value;
+	            b8.value = '';
+	            }
+	            else if (b5.value == '') {
+	                b5.value = b8.value;
+	                b8.value = '';
+	            }
+	            else if (b9.value == '') {
+	                b9.value = b8.value;
+	                b8.value = '';
+	            }
+	            resultt();
+
+	   		}
+	   		function myfunc9() {
+	   			b8 = document.getElementById("a7");
+				b9 = document.getElementById("a8");
+				b6 = document.getElementById("a5");
+				if (b6.value == '') {
+                b6.value = b9.value;
+                b9.value = '';
+	            }
+	            else if (b8.value == '') {
+	                b8.value = b9.value;
+	                b9.value = '';
+	            }
+	            resultt();
+
+	   		}
+	   	
+	   		
+	   	function resultt()
+        {
+            if(b1.value=='1'&&b2.value=='2'&&b3.value=='3'&&b4.value=='4'&&b5.value=='5'&&b6.value=='6'&&b7.value=='7'&&b8.value=='8')
+            {
+                document.getElementById('result').value="you won this game";
+               	document.getElementById('a0').style.color = "green";  
+				document.getElementById('a1').style.color = "green";  
+				document.getElementById('a2').style.color = "green";  
+				document.getElementById('a3').style.color = "green";  
+				document.getElementById('a4').style.color = "green";  
+				document.getElementById('a5').style.color = "green";  
+				document.getElementById('a6').style.color = "green";  
+				document.getElementById('a7').style.color = "green";  
+				document.getElementById('a8').style.color = "green"; 
+
+				document.getElementById('a1').disabled = true;  
+				document.getElementById('a2').disabled = true;  
+				document.getElementById('a3').disabled = true;  
+				document.getElementById('a4').disabled = true;  
+				document.getElementById('a5').disabled = true;  
+				document.getElementById('a6').disabled = true;  
+				document.getElementById('a7').disabled = true;  
+				document.getElementById('a8').disabled = true;   
+
+            }
+        }
+
+
+	</script>
+
+	<style type="text/css">
+		.btn
+		{
+			padding: 10px;
+			height: 120px;
+			width: 120px;
+			font-size: 50px;
+			border: 3px solid rgb(126, 118, 51 );
+			text-align: center;
+			color: rgb(81, 60, 48  );
+			background-color: rgb(161, 156, 111 );
+			border-radius: 20px;
+			caret-color: transparent;
+			cursor: pointer;
+			margin: 5px;
+		}
+		.btn:focus{
+			outline: none;
+		}
+		table
+		{
+			margin: auto;
+			margin-top: 50px;
+		}
+		.res
+		{
+			border: 5px solid rgb(70, 69, 63);
+			padding: 10px 10px;
+			margin-top: 10px;
+			font-family: calibri;
+			border-radius: 20px;
+			font-size: 20px;
+			background-color: rgb(138, 138, 138);
+			color: white;
+		}
+		button {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 87%;
+			border: 5px solid grey;
+			border: 5px solid rgb(70, 69, 63);
+			
+			font-size: 20px;
+			border-radius: 20px;
+			background-color: rgb(138, 138, 138);
+			color: white;
+
+
+
+		}
+		button a
+		{
+			text-decoration-line:none ;
+			color: white;
+			padding: 15px 50px;
+			display: block;
+
+
+		}
+		.resandtap
+		{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	</style>
+</head>
+<body>
+
+
+</body>
+<table >
+	<tr>
+		<td><input type="text" onclick="myfunc1()" id="a0" class="btn" ></td>
+		<td><input type="text" onclick="myfunc2()" id="a1" class="btn" ></td>
+		<td><input type="text" onclick="myfunc3()" id="a2" class="btn" ></td>
+	</tr>
+	<tr>
+		<td><input type="text" onclick="myfunc4()" id="a3" class="btn" ></td>
+		<td><input type="text" onclick="myfunc5()" id="a4" class="btn"></td>
+		<td><input type="text" onclick="myfunc6()" id="a5" class="btn" ></td>
+	</tr>
+	<tr>
+		<td><input type="text" onclick="myfunc7()" id="a6" class="btn" ></td>
+		<td><input type="text" onclick="myfunc8()" id="a7" class="btn" ></td>
+		<td><input type="text" onclick="myfunc9()" id="a8" class="btn" ></td>
+	</tr>
+	
+</table>
+
+<div class="resandtap"> 
+	<input type="text" name="" id="result" class="res"  placeholder="RESULT">
+</div>
+
+	<button><a href="puzzel2.html">reset</a></button>
+</html>

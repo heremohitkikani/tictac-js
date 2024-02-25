@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+
+	<script type="text/javascript">
+	
+	var b1,b2,b3,b4,b5,b6,b7,b8,b9,c=0,z=0,i=0,timer,j=0,k=0;
+
+		
+	   		function myfunc1(){
+				b2 = document.getElementById("a2");
+	   			b1 = document.getElementById("a1");
+				b4 = document.getElementById("a4");
+
+	   			if(b2.value=='')
+	   			{
+	   				b2.value=b1.value;
+	   				b1.value='';
+	   				c++;
+	   			}else if(b4.value==''){
+	   				b4.value=b1.value;
+	   				b1.value='';
+	   				c++;
+	   			}
+	   			resultt();
+	   		}
+	   		function myfunc2() {
+	   			b1 = document.getElementById("a1");
+				b2 = document.getElementById("a2");
+				b3 = document.getElementById("a3");
+				b5 = document.getElementById("a5");
+				if (b1.value == '') {
+                b1.value = b2.value;
+                b2.value = '';
+                c++;
+	            }
+	            else if (b3.value == '') {
+	                b3.value = b2.value;
+	                b2.value = '';
+	                c++;
+	            }
+	            else if (b5.value == '') {
+	                b5.value = b2.value;
+	                b2.value = '';
+	                c++;
+	            }
+	            resultt();
+	   		}
+	   		function myfunc3() {
+	   			b2 = document.getElementById("a2");
+				b3 = document.getElementById("a3");
+				b5 = document.getElementById("a5");
+				 if (b2.value == '') {
+                b2.value = b3.value;
+                b3.value = '';
+                c++;
+	            }
+	            else if (b6.value == '') {
+	                b6.value = b3.value;
+	                b3.value = '';
+	                c++;
+	            }
+	            resultt();
+
+	   		}
+
+	   		function myfunc4(){
+	   			b1 = document.getElementById("a1");
+	   			b4 = document.getElementById("a4");
+				b5 = document.getElementById("a5");
+				b7 = document.getElementById("a7");
+
+	   			if(b1.value=='')
+	   			{
+	   				b1.value=b4.value;
+	   				b4.value='';
+	   				c++;
+	   			}else if(b5.value==''){
+	   				b5.value=b4.value;
+	   				b4.value='';
+	   				c++;
+	   			}else if(b7.value==''){
+	   				b7.value=b4.value;
+	   				b4.value='';
+	   				c++;
+	   			}
+	   			resultt();
+	   		}
+	   		function myfunc5(){
+	   			b4 = document.getElementById("a4");
+				b5 = document.getElementById("a5");
+				b6 = document.getElementById("a6");
+				b2 = document.getElementById("a2");
+				b8 = document.getElementById("a8");
+	 			if (b2.value == '') {
+	                b2.value = b5.value;
+	                b5.value = '';
+	                c++;
+	            }
+	            else if (b4.value == '') {
+	                b4.value = b5.value;
+	                b5.value = '';
+	                c++;
+	            }
+	            else if (b6.value == '') {
+	                b6.value = b5.value;
+	                b5.value = '';
+	                c++;
+	            }
+	            else if (b8.value == '') {
+	                b8.value = b5.value;
+	                b5.value = '';
+	                c++;
+	            }
+	            resultt();
+	   		}
+	   		function myfunc6(){
+	   			b5 = document.getElementById("a5");
+				b6 = document.getElementById("a6");
+				b3 = document.getElementById("a3");
+				b9 = document.getElementById("a9");
+	 			if (b3.value == '') {
+	                b3.value = b6.value;
+	                b6.value = '';
+	                c++;
+	            }
+	            else if (b5.value == '') {
+	                b5.value = b6.value;
+	                b6.value = '';
+	                c++;
+	            }
+	            else if (b9.value == '') {
+	                b9.value = b6.value;
+	                b6.value = '';
+	                c++;
+	            }
+	            resultt();
+
+	   		}
+	   		function myfunc7() {
+	   			b7 = document.getElementById("a7");
+				b8 = document.getElementById("a8");
+				b4 = document.getElementById("a4");
+				 if (b4.value == '') {
+	                b4.value = b7.value;
+	                b7.value = '';
+	                c++;
+	            }
+	            else if (b8.value == '') {
+	                b8.value = b7.value;
+	                b7.value = '';
+	                c++;
+	            }
+	            resultt();
+
+	   		}
+	   		function myfunc8() {
+	   			b7 = document.getElementById("a7");
+				b8 = document.getElementById("a8");
+				b9 = document.getElementById("a9");
+				b5 = document.getElementById("a5");
+				if (b7.value == '') {
+                b7.value = b8.value;
+	            b8.value = '';
+	            c++;
+	            }
+	            else if (b5.value == '') {
+	                b5.value = b8.value;
+	                b8.value = '';
+	                c++;
+	            }
+	            else if (b9.value == '') {
+	                b9.value = b8.value;
+	                b8.value = '';
+	                c++;
+	            }
+	            resultt();
+
+	   		}
+	   		function myfunc9() {
+	   			b8 = document.getElementById("a8");
+				b9 = document.getElementById("a9");
+				b6 = document.getElementById("a6");
+				if (b6.value == '') {
+                b6.value = b9.value;
+                b9.value = '';
+                c++;
+	            }
+	            else if (b8.value == '') {
+	                b8.value = b9.value;
+	                b9.value = '';
+	                c++;
+	            }
+	            resultt();
+
+	   		}
+	   		// 	
+	   		// {
+	   		// 	setTimeout(function(){
+	   		// 		document.getElementById('time').innerHTML=i;i++;},1000)
+	   			
+	   		// }
+	   		(function () {
+	   				i=0;
+			   		timer=setInterval(()=>{
+			   			document.getElementById("time").value=""+k+":"+j+":"+i;i++; 
+			   			if (i==61) 
+			   			{
+			   				i=0;
+			   				j++;
+			   			}
+			   			if(j==61)
+			   			{
+			   				j=0;
+			   				k++;
+			   			}
+			   			
+			   		},1000)
+	   		})()
+
+	 
+	   		
+	   	function resultt()
+        {
+            if(b1.value=='1'&&b2.value=='2'&&b3.value=='3'&&b4.value=='4'&&b5.value=='5'&&b6.value=='6'&&b7.value=='7'&&b8.value=='8')
+            {
+            	clearInterval(timer);
+                document.getElementById('result').value="you won this game";
+                document.getElementById('move').value=c+" time";
+               	document.getElementById('a1').style.color = "green";  
+				document.getElementById('a2').style.color = "green";  
+				document.getElementById('a3').style.color = "green";  
+				document.getElementById('a4').style.color = "green";  
+				document.getElementById('a5').style.color = "green";  
+				document.getElementById('a6').style.color = "green";  
+				document.getElementById('a7').style.color = "green";  
+				document.getElementById('a8').style.color = "green";  
+
+				document.getElementById('a1').disabled = true;  
+				document.getElementById('a2').disabled = true;  
+				document.getElementById('a3').disabled = true;  
+				document.getElementById('a4').disabled = true;  
+				document.getElementById('a5').disabled = true;  
+				document.getElementById('a6').disabled = true;  
+				document.getElementById('a7').disabled = true;  
+				document.getElementById('a8').disabled = true;  
+				// document.getElementById('a9').style.color = "green";
+
+
+            }
+        }
+
+
+
+	</script>
+
+	<style type="text/css">
+		.btn
+		{
+			padding: 10px;
+			height: 120px;
+			width: 120px;
+			font-size: 50px;
+			border: 3px solid rgb(126, 118, 51 );
+			text-align: center;
+			color: rgb(81, 60, 48  );
+			background-color: rgb(161, 156, 111 );
+			border-radius: 20px;
+			caret-color: transparent;
+			cursor: pointer;
+			margin: 5px;
+		}
+		.btn:focus{
+			outline: none;
+		}
+		table
+		{
+			margin: auto;
+			margin-top: 50px;
+		}
+		.res
+		{
+			border: 5px solid rgb(70, 69, 63);
+			padding: 10px 10px;
+/*			position: absolute;*/
+/*			left: 50%;*/
+/*			transform: translateX(-50%);*/
+			margin-top: 10px;
+			font-family: calibri;
+			border-radius: 20px;
+			font-size: 20px;
+			background-color: rgb(138, 138, 138);
+			color: white;
+		}
+		button {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 87%;
+			border: 5px solid grey;
+			border: 5px solid rgb(70, 69, 63);
+			
+			font-size: 20px;
+			border-radius: 20px;
+			background-color: rgb(138, 138, 138);
+			color: white;
+
+
+
+		}
+		button a
+		{
+			text-decoration-line:none ;
+			color: white;
+			padding: 15px 50px;
+			display: block;
+
+
+		}
+		.resandtap
+		{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	</style>
+</head>
+<body>
+
+
+</body>
+<table >
+	<tr>
+		<td><input type="text" onclick="myfunc1()" id="a1" class="btn" value="1"></td>
+		<td><input type="text" onclick="myfunc2()" id="a2" class="btn" value="2"></td>
+		<td><input type="text" onclick="myfunc3()" id="a3" class="btn" value="3"></td>
+	</tr>
+	<tr>
+		<td><input type="text" onclick="myfunc4()" id="a4" class="btn" value="4"></td>
+		<td><input type="text" onclick="myfunc5()" id="a5" class="btn" value=""></td>
+		<td><input type="text" onclick="myfunc6()" id="a6" class="btn" value="5"></td>
+	</tr>
+	<tr>
+		<td><input type="text" onclick="myfunc7()" id="a7" class="btn" value="6"></td>
+		<td><input type="text" onclick="myfunc8()" id="a8" class="btn" value="7"></td>
+		<td><input type="text" onclick="myfunc9()" id="a9" class="btn" value="8"></td>
+	</tr>
+	
+</table>
+
+<div class="resandtap"> 
+	<input type="text" name="" id="result" class="res"  placeholder="RESULT">
+	<input type="text" name="" id="move" class="res"  placeholder="moves">
+	<input type="text" name="" id="time" class="res"  placeholder="TIME">
+</div>
+
+	<button><a href="puzzle.html">reset</a></button>
+</html>
